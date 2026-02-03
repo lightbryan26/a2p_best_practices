@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.5; max-width: 800px; margin: 0 auto; padding: 20px; }
+    h1 { font-size: 24pt; color: #1a73e8; border-bottom: 2px solid #1a73e8; padding-bottom: 10px; }
+    h2 { font-size: 16pt; color: #1a73e8; margin-top: 30px; border-bottom: 1px solid #dadce0; padding-bottom: 5px; }
+    h3 { font-size: 13pt; color: #202124; margin-top: 20px; }
+    h4 { font-size: 11pt; color: #5f6368; margin-top: 15px; }
+    table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+    th, td { border: 1px solid #dadce0; padding: 10px; text-align: left; }
+    th { background-color: #f1f3f4; font-weight: bold; }
+    code { background-color: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', monospace; font-size: 10pt; }
+    pre { background-color: #f8f9fa; border: 1px solid #dadce0; border-radius: 4px; padding: 15px; overflow-x: auto; font-family: 'Courier New', monospace; font-size: 10pt; white-space: pre-wrap; }
+    .template-box { background-color: #e8f0fe; border-left: 4px solid #1a73e8; padding: 15px; margin: 15px 0; }
+    .warning-box { background-color: #fce8e6; border-left: 4px solid #d93025; padding: 15px; margin: 15px 0; }
+    .success-box { background-color: #e6f4ea; border-left: 4px solid #1e8e3e; padding: 15px; margin: 15px 0; }
+    .checklist { list-style-type: none; padding-left: 0; }
+    .checklist li { padding: 5px 0; }
+    .checklist li:before { content: "☐ "; }
+    ul { margin: 10px 0; }
+    li { margin: 5px 0; }
+  </style>
+</head>
+<body>
+
+<h1>A2P 10DLC Registration Best Practices</h1>
+<p><strong>Complete Guide for Campaign Approval</strong></p>
+
+<table>
+  <tr>
+    <td><strong>Last Updated:</strong></td>
+    <td>February 2026</td>
+  </tr>
+  <tr>
+    <td><strong>Version:</strong></td>
+    <td>1.0</td>
+  </tr>
+  <tr>
+    <td><strong>Author:</strong></td>
+    <td>John Bryan</td>
+  </tr>
+</table>
+
+<h2>Table of Contents</h2>
+<ol>
+  <li>Overview</li>
+  <li>Campaign Details</li>
+  <li>Consent &amp; Opt-In Requirements</li>
+  <li>Website &amp; Form Requirements</li>
+  <li>Message Flow / Call to Action</li>
+  <li>Sample Messages</li>
+  <li>Opt-In Message</li>
+  <li>Voice Integrity Registration</li>
+  <li>Common Rejection Reasons &amp; Fixes</li>
+  <li>Templates &amp; Examples</li>
+  <li>Pre-Launch Website Guidelines</li>
+  <li>Checklist Before Submission</li>
+</ol>
+
+<h2>1. Overview</h2>
+
+<p>A2P 10DLC (Application-to-Person 10-Digit Long Code) registration is a mandatory carrier requirement for businesses sending SMS messages to U.S. mobile numbers. Registration is enforced by U.S. cellular carriers (Verizon, AT&T, T-Mobile) to verify sender legitimacy, consent integrity, and message transparency.</p>
+
+<h3>Key Components</h3>
+<ul>
+  <li><strong>Brand Registration:</strong> Identifies who is sending messages</li>
+  <li><strong>Campaign Registration:</strong> Defines what type of messages are being sent</li>
+  <li><strong>Consent Documentation:</strong> Proves how users opt-in to receive messages</li>
+</ul>
+
+<h2>2. Campaign Details</h2>
+
+<h3>Recommended Use Case</h3>
+<p><strong>Low Volume Mixed</strong> - Best for most small businesses sending appointment confirmations, reminders, and occasional promotions.</p>
+
+<h3>Use Case Description Template</h3>
+<div class="template-box">
+This campaign sends appointment information - confirmation &amp; reminder messages to customers once they have booked an appointment with <strong>[Company Name LLC]</strong> (DBA - <strong>[Company Name]</strong>) on the website (<strong>https://website.com</strong>) and opted in to receive inquiry, estimates, service updates, and notification SMS from <strong>[Company Name]</strong>.
+</div>
+
+<h3>Use Case Description Requirements</h3>
+<ul>
+  <li>Specify the company's legal name (LLC, Inc., etc.)</li>
+  <li>Include DBA if applicable</li>
+  <li>Include the exact website URL</li>
+  <li>List specific SMS types (inquiry, estimates, service updates, notifications)</li>
+  <li>Mention opt-in requirement</li>
+</ul>
+
+<h2>3. Consent &amp; Opt-In Requirements</h2>
+
+<h3>Critical Rules</h3>
+<table>
+  <tr>
+    <th>Rule</th>
+    <th>Requirement</th>
+  </tr>
+  <tr>
+    <td><strong>Separate Checkboxes</strong></td>
+    <td>Marketing messages and Non-marketing messages must have separate checkboxes</td>
+  </tr>
+  <tr>
+    <td><strong>Unchecked by Default</strong></td>
+    <td>All consent checkboxes must be unchecked by default</td>
+  </tr>
+  <tr>
+    <td><strong>Optional Consent</strong></td>
+    <td>Users cannot be forced to opt-in to SMS to submit a form</td>
+  </tr>
+  <tr>
+    <td><strong>Separate from Privacy/TnC</strong></td>
+    <td>SMS opt-in checkbox must be separate from Privacy Policy/Terms checkbox</td>
+  </tr>
+</table>
+
+<h3>Two Consent Checkbox System</h3>
+
+<h4>Checkbox #1 - Marketing Messages:</h4>
+<div class="template-box">
+I agree to receive recurring automated promotional and personalized marketing text messages from <strong>[Company Name]</strong> at <strong>[Phone Number]</strong>. Consent is not a condition of purchase. Message &amp; data rates may apply. Message frequency varies. Reply STOP to opt out, HELP for help.
+</div>
+
+<h4>Checkbox #2 - Non-Marketing Messages:</h4>
+<div class="template-box">
+I agree to receive non-marketing text messages from <strong>[Company Name]</strong> about my inquiry/estimate/appointments. Message &amp; data rates may apply. Reply STOP to opt out, HELP for help.
+</div>
+
+<h3>Consent Rules Summary</h3>
+<div class="success-box">
+<strong>DO:</strong>
+<ul>
+  <li>✅ Checkboxes must be <strong>unchecked by default</strong></li>
+  <li>✅ Consent must be <strong>optional</strong> (not required to submit form)</li>
+  <li>✅ Must have <strong>separate checkboxes</strong> for marketing vs. non-marketing</li>
+  <li>✅ SMS consent must be <strong>separate</strong> from Privacy Policy/Terms consent</li>
+</ul>
+</div>
+
+<div class="warning-box">
+<strong>DON'T:</strong>
+<ul>
+  <li>❌ Cannot force SMS opt-in even when phone number is required</li>
+  <li>❌ Cannot pre-select or pre-check consent boxes</li>
+</ul>
+</div>
+
+<h2>4. Website &amp; Form Requirements</h2>
+
+<h3>Mandatory Elements</h3>
+<table>
+  <tr>
+    <th>Element</th>
+    <th>Location</th>
+    <th>Requirement</th>
+  </tr>
+  <tr>
+    <td><strong>Privacy Policy Link</strong></td>
+    <td>Footer</td>
+    <td>Must be visible and accessible</td>
+  </tr>
+  <tr>
+    <td><strong>Terms &amp; Conditions Link</strong></td>
+    <td>Footer</td>
+    <td>Must be visible and accessible</td>
+  </tr>
+  <tr>
+    <td><strong>Consent Checkboxes</strong></td>
+    <td>Form</td>
+    <td>Unchecked by default, optional</td>
+  </tr>
+  <tr>
+    <td><strong>Phone Number Field</strong></td>
+    <td>Form</td>
+    <td>Can be required, but SMS consent must remain optional</td>
+  </tr>
+</table>
+
+<h3>Privacy Policy &amp; Terms Requirements</h3>
+<ul>
+  <li>Must be <strong>clearly visible</strong> in footer</li>
+  <li>Must <strong>not be obscured</strong> by other design elements or pop-ups</li>
+  <li>Must be <strong>accessible without extra steps</strong> (no login required)</li>
+  <li>Contact information must <strong>match Brand Registration</strong></li>
+</ul>
+
+<div class="warning-box">
+<strong>Privacy Policy &amp; Terms Must NOT Mention:</strong>
+<ul>
+  <li>❌ Affiliate marketing</li>
+  <li>❌ Selling or buying of leads</li>
+  <li>❌ Third-party data sharing for marketing</li>
+</ul>
+</div>
+
+<h3>Form Configuration</h3>
+
+<p><strong>When Phone Number is REQUIRED:</strong></p>
+<ul>
+  <li>Consent checkboxes must be <strong>optional</strong></li>
+  <li>Consent checkboxes must be <strong>unchecked by default</strong></li>
+  <li>User must be able to submit form <strong>without</strong> checking SMS consent</li>
+</ul>
+
+<p><strong>When Phone Number is OPTIONAL:</strong></p>
+<ul>
+  <li>Consent checkboxes are not required</li>
+  <li>Privacy Policy and Terms still required in footer</li>
+</ul>
+
+<h2>5. Message Flow / Call to Action</h2>
+
+<p>The Message Flow describes how users opt-in to receive SMS messages. This is one of the most critical sections for approval.</p>
+
+<h3>Required Elements</h3>
+<ul>
+  <li>✅ Specific URL where opt-in occurs</li>
+  <li>✅ Form name (e.g., "Get a free quote" form)</li>
+  <li>✅ Description of consent checkboxes (marketing vs. non-marketing)</li>
+  <li>✅ Statement that checkboxes are unchecked by default</li>
+  <li>✅ Brand/company identification</li>
+  <li>✅ "Message &amp; data rates may apply"</li>
+  <li>✅ Opt-out instructions (STOP)</li>
+  <li>✅ Help instructions (HELP)</li>
+</ul>
+
+<h3>Message Flow Template</h3>
+<div class="template-box">
+End users opt in on <strong>https://[website.com]</strong> by submitting the "<strong>[Form Name]</strong>" form. Users enter their phone number and must manually check one of the consent checkboxes: (1) Marketing texts and/or (2) Non-marketing texts (appointment/estimate updates). Checkboxes are unchecked by default. After checking a box and submitting the form, users may receive SMS from <strong>[Company Name]</strong>. Reply STOP to opt out; HELP for help; Message &amp; data rates may apply.
+</div>
+
+<h3>Alternative: Simple Message Flow</h3>
+<div class="template-box">
+Customers provide opt-in specifically when submitting a form on our website at <strong>https://[website.com]</strong>. Opt-in is a self-service process where users complete a form that collects their phone number and select a consent checkbox to agree to receive SMS messages.
+</div>
+
+<h3>Website Opt-In Language Template</h3>
+<div class="template-box">
+"By submitting, you authorize <strong>[Company Name]</strong> to send text messages with <strong>[appointment confirmations, reminders, and promotional offers]</strong>. Message/data rates apply. Consent is not a condition of purchase. Reply STOP to unsubscribe."
+</div>
+
+<h2>6. Sample Messages</h2>
+
+<h3>Requirements</h3>
+<ul>
+  <li>✅ Greeting with recipient's name</li>
+  <li>✅ Sender identification (person name + company name)</li>
+  <li>✅ Phone number in +1 format (e.g., +18031234567)</li>
+  <li>✅ "Reply STOP to unsubscribe"</li>
+  <li>✅ Use full URLs (https://)</li>
+</ul>
+
+<h3>Restrictions</h3>
+<div class="warning-box">
+<ul>
+  <li>❌ No public URL shorteners (bit.ly, TinyURL, etc.)</li>
+  <li>❌ No unsecured URLs (must use https://)</li>
+  <li>❌ No PII (Personal Identifiable Information) beyond examples</li>
+</ul>
+</div>
+
+<h3>Sample Message #1 Template (Appointment Confirmation)</h3>
+<div class="template-box">
+Hi <strong>[Name]</strong>! This is <strong>[Owner/Rep]</strong> from <strong>[Company Name]</strong>. Our appointment for <strong>[Date] [Time]</strong> is confirmed. Please reach out to <strong>+1[PhoneNumber]</strong> in case you need to reschedule. Reply STOP to unsubscribe.
+</div>
+
+<p><strong>Example:</strong></p>
+<pre>Hi John! This is Mike from SealPro Insulation Solutions. Our appointment for July 20 11:00 AM is confirmed. Please reach out to +15551234567 in case you need to reschedule. Reply STOP to unsubscribe.</pre>
+
+<h3>Sample Message #2 Template (Follow-Up/Reschedule)</h3>
+<div class="template-box">
+Hi <strong>[Name]</strong>! This is <strong>[Owner/Rep]</strong> from <strong>[Company Name]</strong>. I see you weren't able to confirm our scheduled <strong>[appointment type]</strong>. Need to reschedule? Book your next appointment at <strong>https://[website.com]</strong>. Reply STOP to unsubscribe.
+</div>
+
+<p><strong>Example:</strong></p>
+<pre>Hi Sarah! This is Mike from SealPro Insulation Solutions. I see you weren't able to confirm our scheduled estimate. Need to reschedule? Book your next appointment at https://get.sealpro.com. Reply STOP to unsubscribe.</pre>
+
+<h3>Sample Message #3 Template (Reminder)</h3>
+<div class="template-box">
+Good morning! This is <strong>[Company Name]</strong>. Your <strong>[appointment type]</strong> is scheduled for today at <strong>[Time]</strong>. Please <strong>[any instructions]</strong>. Questions? Call <strong>+1[PhoneNumber]</strong>. Reply STOP to unsubscribe.
+</div>
+
+<h3>Sample Message #4 Template (Promotion)</h3>
+<div class="template-box">
+Hi <strong>[Name]</strong>! <strong>[Seasonal greeting]</strong> <strong>[Company Name]</strong> is offering <strong>[promotion details]</strong>. Schedule yours at <strong>https://[website.com]</strong>. Reply STOP to unsubscribe.
+</div>
+
+<h2>7. Opt-In Message</h2>
+
+<p>The Opt-In Message is sent to users immediately after they consent to receive SMS.</p>
+
+<h3>Opt-In Message Template</h3>
+<div class="template-box">
+You have successfully opted-in to receive notification and promotional SMS from <strong>[Company Name]</strong>. Please reply STOP if you need to Opt-out in the future.
+</div>
+
+<h3>Alternative (More Detailed)</h3>
+<div class="template-box">
+You have successfully opted in to receive SMS messages from <strong>[Company Name]</strong> regarding your inquiry, estimates, service updates, and notification SMS. Reply STOP at any time to unsubscribe.
+</div>
+
+<h2>8. Voice Integrity Registration</h2>
+
+<p>For businesses also registering voice/calling capabilities.</p>
+
+<h3>Fields</h3>
+<table>
+  <tr>
+    <th>Field</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td><strong>Use Case</strong></td>
+    <td>Appointment Scheduling</td>
+  </tr>
+  <tr>
+    <td><strong>Employee Count</strong></td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td><strong>Average Business Day Call Volume</strong></td>
+    <td>15</td>
+  </tr>
+</table>
+
+<h3>Notes Template</h3>
+<div class="template-box">
+Calls are made by the business owner to respond to inbound inquiries, return missed calls, and confirm or conduct scheduled consultations. <strong>No cold calling or bulk outbound dialing is performed.</strong> All communication follows user-initiated contact or consent.
+</div>
+
+<h2>9. Common Rejection Reasons &amp; Fixes</h2>
+
+<h3>Twilio Error Codes</h3>
+<table>
+  <tr>
+    <th>Error Code</th>
+    <th>Reason</th>
+    <th>How to Fix</th>
+  </tr>
+  <tr>
+    <td><strong>30909</strong></td>
+    <td>CTA/Message Flow incomplete or unverifiable</td>
+    <td>Describe ALL opt-in methods with full detail; include required disclosures; provide accessible proof</td>
+  </tr>
+  <tr>
+    <td><strong>30891</strong></td>
+    <td>Invalid/unverifiable website</td>
+    <td>Ensure website is live, accessible, and has visible opt-in flow</td>
+  </tr>
+  <tr>
+    <td><strong>30892</strong></td>
+    <td>Public URL shortener in sample message</td>
+    <td>Use full URLs or branded short domains only (no bit.ly, TinyURL)</td>
+  </tr>
+  <tr>
+    <td><strong>30896</strong></td>
+    <td>Opt-in error</td>
+    <td>Detail all opt-in methods; include Privacy Policy &amp; Terms links; avoid third-party sharing language</td>
+  </tr>
+  <tr>
+    <td><strong>30894</strong></td>
+    <td>Invalid brand information</td>
+    <td>Ensure brand info matches campaign and website information</td>
+  </tr>
+  <tr>
+    <td><strong>30882</strong></td>
+    <td>Terms &amp; Conditions issue</td>
+    <td>Remove any affiliate marketing or lead buying/selling language</td>
+  </tr>
+  <tr>
+    <td><strong>30885</strong></td>
+    <td>High Risk</td>
+    <td>Campaign flagged as fraud or deceptive - contact support</td>
+  </tr>
+  <tr>
+    <td><strong>30897</strong></td>
+    <td>Disallowed Content</td>
+    <td>Prohibited content detected - contact support</td>
+  </tr>
+</table>
+
+<h3>Common Mistakes to Avoid</h3>
+<ol>
+  <li><strong>Pre-checked consent boxes</strong> - Always unchecked by default</li>
+  <li><strong>Single checkbox for all consent</strong> - Must separate marketing vs. non-marketing</li>
+  <li><strong>Missing Privacy Policy/Terms links</strong> - Must be visible in footer</li>
+  <li><strong>Using URL shorteners</strong> - Use full URLs only</li>
+  <li><strong>Phone number format</strong> - Use +1 format</li>
+  <li><strong>Missing STOP instructions</strong> - Every message needs opt-out language</li>
+  <li><strong>Forced SMS consent</strong> - Consent must be optional even if phone is required</li>
+  <li><strong>Affiliate/lead selling language</strong> - Remove from Privacy Policy &amp; Terms</li>
+  <li><strong>Inaccessible opt-in flow</strong> - Must be publicly viewable (no login required)</li>
+  <li><strong>Mismatched business information</strong> - Brand, campaign, and website info must match</li>
+</ol>
+
+<h2>10. Templates &amp; Examples</h2>
+
+<h3>Complete Registration Example</h3>
+
+<table>
+  <tr>
+    <td><strong>Company:</strong></td>
+    <td>SealPro Insulation Solutions, LLC (DBA: SealPro)</td>
+  </tr>
+  <tr>
+    <td><strong>Website:</strong></td>
+    <td>https://get.sealpro.com</td>
+  </tr>
+  <tr>
+    <td><strong>Phone:</strong></td>
+    <td>+15551234567</td>
+  </tr>
+</table>
+
+<h4>Use Case Description:</h4>
+<pre>This campaign sends appointment information - confirmation & reminder messages to customers once they have booked an appointment with SealPro Insulation Solutions, LLC (DBA - SealPro) on the website (https://get.sealpro.com) and opted in to receive inquiry, estimates, service updates, and notification SMS from SealPro Insulation Solutions.</pre>
+
+<h4>Sample Message #1:</h4>
+<pre>Hi Jennifer! This is Mike from SealPro Insulation Solutions. Our appointment for January 27 9:00 AM is confirmed. Please reach out to +15551234567 in case you need to reschedule. Reply STOP to unsubscribe.</pre>
+
+<h4>Sample Message #2:</h4>
+<pre>Hi David! This is Mike from SealPro Insulation Solutions. I see you weren't able to confirm our scheduled estimate. Need to reschedule? Book your next appointment at https://get.sealpro.com. Reply STOP to unsubscribe.</pre>
+
+<h4>Message Flow:</h4>
+<pre>End users opt in on https://get.sealpro.com by submitting the "Get a free quote" form. Users enter their phone number and must manually check one of the consent checkboxes: (1) Marketing texts and/or (2) Non-marketing texts (appointment/estimate updates). Checkboxes are unchecked by default. After checking a box and submitting the form, users may receive SMS from SealPro Insulation Solutions. Reply STOP to opt out; HELP for help; Message & data rates may apply.</pre>
+
+<h4>Website Opt-in Language:</h4>
+<pre>"By submitting, you authorize SealPro Insulation Solutions to send text messages with appointment confirmations, reminders, and promotional offers. Message/data rates apply. Consent is not a condition of purchase. Reply STOP to unsubscribe."</pre>
+
+<h4>Opt-In Message:</h4>
+<pre>You have successfully opted-in to receive notification and promotional SMS from SealPro Insulation Solutions. Please reply STOP if you need to Opt-out in the future.</pre>
+
+<h4>Consent Checkbox #1 (Marketing):</h4>
+<pre>I agree to receive recurring automated promotional and personalized marketing text messages from SealPro Insulation Solutions at (555) 123-4567. Consent is not a condition of purchase. Message & data rates may apply. Message frequency varies. Reply STOP to opt out, HELP for help.</pre>
+
+<h4>Consent Checkbox #2 (Non-Marketing):</h4>
+<pre>I agree to receive non-marketing text messages from SealPro Insulation Solutions about my inquiry/estimate/appointments. Message & data rates may apply. Reply STOP to opt out, HELP for help.</pre>
+
+<h2>11. Pre-Launch Website Guidelines</h2>
+
+<p>If the website is not yet live, follow these steps:</p>
+
+<ol>
+  <li><strong>State in campaign description</strong> that it's a pre-launch website</li>
+  <li><strong>Provide a publicly accessible URL</strong> to a screenshot of the SMS opt-in flow</li>
+  <li><strong>Screenshot must show:</strong>
+    <ul>
+      <li>The form with phone number field</li>
+      <li>Both consent checkboxes (unchecked)</li>
+      <li>Checkbox language visible</li>
+      <li>Privacy Policy &amp; Terms links in footer</li>
+    </ul>
+  </li>
+</ol>
+
+<h3>Pre-Launch Message Flow Example</h3>
+<div class="template-box">
+End users opt in via our pre-launch website form by visiting <strong>https://[website.com]</strong>, as we are currently rebuilding the old website as part of optimizing our company. By completing a form that collects their phone number, users can optionally select a consent checkbox to agree to receive SMS messages. Checking this checkbox confirms their consent to receive updates about their <strong>[service type]</strong> and exclusive offers, ensuring compliance with privacy regulations and transparent communication.
+</div>
+
+<h2>12. Checklist Before Submission</h2>
+
+<h3>Brand Registration</h3>
+<ul class="checklist">
+  <li>Legal company name matches IRS CP 575 / EIN</li>
+  <li>EIN is correct (use CP 575 or 147c letter)</li>
+  <li>Business address is accurate</li>
+  <li>Business type is correct (LLC, Corp, etc.)</li>
+</ul>
+
+<h3>Website Requirements</h3>
+<ul class="checklist">
+  <li>Website is live and accessible</li>
+  <li>Privacy Policy link visible in footer</li>
+  <li>Terms &amp; Conditions link visible in footer</li>
+  <li>Privacy Policy does NOT mention lead selling/buying or affiliate marketing</li>
+  <li>Contact info in Privacy Policy matches Brand Registration</li>
+  <li>Opt-in form is publicly accessible (no login required)</li>
+</ul>
+
+<h3>Form Requirements</h3>
+<ul class="checklist">
+  <li>Two separate consent checkboxes (marketing &amp; non-marketing)</li>
+  <li>Checkboxes are unchecked by default</li>
+  <li>SMS consent is optional (not required to submit)</li>
+  <li>Checkbox language includes all required disclosures</li>
+  <li>Phone number field present</li>
+</ul>
+
+<h3>Campaign Details</h3>
+<ul class="checklist">
+  <li>Use Case Description follows template</li>
+  <li>Company name includes legal entity (LLC, Inc.)</li>
+  <li>DBA included if applicable</li>
+  <li>Website URL is correct and uses https://</li>
+</ul>
+
+<h3>Sample Messages</h3>
+<ul class="checklist">
+  <li>Include greeting with name</li>
+  <li>Include sender name and company name</li>
+  <li>Phone number in +1 format</li>
+  <li>"Reply STOP to unsubscribe" included</li>
+  <li>No URL shorteners</li>
+  <li>All URLs use https://</li>
+</ul>
+
+<h3>Message Flow</h3>
+<ul class="checklist">
+  <li>Specific opt-in URL included</li>
+  <li>Form name specified</li>
+  <li>Both checkbox types mentioned</li>
+  <li>"Unchecked by default" stated</li>
+  <li>STOP, HELP, and rates disclaimer included</li>
+</ul>
+
+<h3>Opt-In Message</h3>
+<ul class="checklist">
+  <li>Company name included</li>
+  <li>STOP instructions included</li>
+</ul>
+
+<h2>Reference Links</h2>
+<ul>
+  <li><a href="https://help.gohighlevel.com/support/solutions/articles/155000007237-how-to-get-your-phone-number-a2p-approved-in-2026">GHL - How to get your phone number A2P approved in 2026</a></li>
+  <li><a href="https://help.gohighlevel.com/support/solutions/articles/48001229784-a2p-10dlc-campaign-approval-best-practices">GHL - A2P 10DLC Campaign Approval Best Practices</a></li>
+  <li><a href="https://help.gohighlevel.com/support/solutions/articles/155000004539-campaign-registration-step-by-step-guide-and-faqs">GHL - Campaign Registration Step by Step Guide</a></li>
+  <li><a href="https://www.twilio.com/docs/api/errors/30909">Twilio - 30909 Campaign Vetting Rejection</a></li>
+  <li><a href="https://www.twilio.com/docs/api/errors/30891">Twilio - 30891 Invalid Website URL</a></li>
+  <li><a href="https://www.twilio.com/docs/api/errors/30896">Twilio - 30896 Opt-in Error</a></li>
+</ul>
+
+<h2>Document History</h2>
+<table>
+  <tr>
+    <th>Version</th>
+    <th>Date</th>
+    <th>Changes</th>
+  </tr>
+  <tr>
+    <td>1.0</td>
+    <td>February 2026</td>
+    <td>Initial documentation</td>
+  </tr>
+</table>
+
+<p><em>This documentation is maintained by John Bryan for internal use and client A2P registrations.</em></p>
+
+</body>
+</html>
